@@ -2,6 +2,15 @@
 Code for "SpringBoot + Kubernetes Tutorial" YouTube Series https://www.youtube.com/playlist?list=PLuNxlOYbv61h66_QlcjCEkVAj6RdeplJJ
 
 ## How to run?
+### Using Jib maven plugin generating imgae
+```
+PS C:\D_Drive\DXC\Learning\Projects\jd_Spring_boot_master\JD_Spring_Boot_Master\Siva_lab\bookmarker-api> mvn compile jib:build
+
+```
+### Docker compose executio with multiple docker compose fiels
+```sh
+PS C:\D_Drive\DXC\Learning\Projects\jd_Spring_boot_master\JD_Spring_Boot_Master\Siva_lab\bookmarker-api> docker-compose -f docker-compose.yml -f docker-compose-app.yml up -d --build
+```
 
 ```shell
 $ git clone https://github.com/sivaprasadreddy/springboot-kubernetes-youtube-series.git
